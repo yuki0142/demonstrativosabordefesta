@@ -1,0 +1,186 @@
+@media (max-width: 986px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logonav {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 40vh;
+    }
+
+    .banner video {
+        height: 40vh;
+    }
+
+    /* SOBRE E SERVIÇOS */
+    .sobre,
+    .servicos {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sobre-texto,
+    .servicos-texto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sobre-imagem,
+    .servicos-imagem {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sobre-imagem img,
+    .servicos-imagem img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* EVENTOS */
+    .eventos .titulo{
+        font-size: 40px;
+    }
+    
+    .eventos .imagem {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .eventos .imagem img {
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    /* CARDS */
+    .buffet-section .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .buffet-section .card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: 250px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /* CONTATO E TRABALHO */
+    .contato,
+    .secao-trabalho {
+        height: auto;
+        padding: 40px 20px;
+        background-position: center;
+    }
+
+    .contato .titulo,
+    .secao-trabalho .titulo {
+        font-size: 40px;
+    }
+
+    .contato .highlightcontato,
+    .secao-trabalho .subtitulo {
+        font-size: 30px;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .rodape .coluna {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .banner {
+        height: 30vh;
+    }
+
+    .banner video {
+        height: 30vh;
+    }
+
+    .sobre-texto h2,
+    .servicos-texto h2 {
+        font-size: 24px;
+    }
+
+    .sobre-texto h2 span,
+    .servicos-texto h2 span,
+    .buffet-section .titulo,
+    .contato .titulo {
+        font-size: 50px;
+    }
+
+    .sobre-texto p,
+    .servicos-texto p,
+    .buffet-section .card p {
+        font-size: 16px;
+    }
+
+    .buffet-section .card {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+
+    .eventos .imagem {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .eventos .overlay {
+        font-size: 16px;
+    }
+
+    .contato .highlightcontato,
+    .secao-trabalho .subtitulo {
+        font-size: 24px;
+    }
+
+    .contatobot {
+        font-size: 28px;
+    }
+
+    .rodape h3 {
+        font-size: 28px;
+    }
+
+    .rodape ul li a {
+        font-size: 16px;
+    }
+
+}
