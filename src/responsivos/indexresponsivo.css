@@ -122,10 +122,6 @@
 
 @media (max-width: 480px) {
 
-    nav ul li a {
-        font-size: 16px;
-    }
-
     .banner {
         height: 30vh;
     }
