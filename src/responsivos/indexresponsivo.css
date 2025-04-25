@@ -62,6 +62,10 @@
     }
 
     /* EVENTOS */
+    .eventos .titulo{
+        font-size: 40px;
+    }
+    
     .eventos .imagem {
         width: 80%;
         max-width: 300px;
