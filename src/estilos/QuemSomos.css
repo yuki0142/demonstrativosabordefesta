@@ -1,0 +1,310 @@
+body {
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #EFEFEA;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+
+.logonav {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E6953C;
+    /* Tom dourado */
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+    /* Tom dourado mais claro ao passar o mouse */
+}
+
+.banner {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.banner img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 140px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #E6953C;
+    z-index: 2;
+    /* garante que o título fique acima da camada escura */
+}
+
+.introducao {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.introducao h1 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 100px;
+    color: #E6953C;
+    margin-top: 40px;
+}
+
+.introducao p {
+    max-width: 600px;
+    font-size: 20px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.assinatura {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.assinatura h2 {
+    color: #800020;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.assinatura p {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #E6953C;
+    font-size: 40px;
+}
+
+.galeriaequipe {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.galeriaequipe .imagem {
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.galeriaequipe .imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.historia {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0px;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloco.invertido {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 50px;
+    color: #E6953C;
+    margin-bottom: 5px;
+}
+
+.texto .data {
+    color: #800020;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #eee;
+}
+
+.imagemhistoria {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagemhistoria img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.sucesso {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    background: url('/src/imagensquemsomos/contato.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.sucesso .overlaysucesso {
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sucesso .titulo {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    color: #E6953C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sucesso .highlightsucesso {
+    font-size: 60px;
+    font-weight: bold;
+    color: #800020;
+    /* Vinho */
+}
+
+.rodape {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rodape .logo p {
+    font-size: 20px;
+}
+
+.rodape .coluna {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.rodape .logo img {
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+.rodape h3 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #E6953C;
+    /* Cor dourada */
+    font-size: 40px;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    margin: 15px 0;
+}
+
+.rodape ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.rodape ul li a:hover {
+    color: #ffb96d;
+}
+
+.rodape .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
