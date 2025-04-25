@@ -1,0 +1,465 @@
+body {
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #EFEFEA;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    font-family: "Herr Von Muellerhoff", cursive;
+}
+
+.logonav {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E6953C;
+    /* Tom dourado */
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+    /* Tom dourado mais claro ao passar o mouse */
+}
+
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.banner video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.sobre-texto {
+    width: 50%;
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #800020;
+    /* Vinho */
+    margin-bottom: 15px;
+}
+
+.sobre-texto h2 span {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: #E6953C;
+    /* Dourado */
+}
+
+.sobre-texto p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.botaosobre {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #800020;
+    /* Vinho */
+    color: #E6953C;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.botaosobre:hover {
+    background-color: #b6002d;
+}
+
+.sobre-imagem {
+    width: 45%;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.servicos-imagem {
+    width: 45%;
+}
+
+.servicos-imagem img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.servicos-texto {
+    width: 50%;
+    text-align: center;
+}
+
+.servicos-texto h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #800020;
+    /* Vinho */
+    margin-bottom: 15px;
+}
+
+.servicos-texto h2 span {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: #E6953C;
+    /* Dourado */
+}
+
+.servicos-texto p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.botaoservicos {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #800020;
+    /* Vinho */
+    color: #E6953C;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.botaoservicos:hover {
+    background-color: #b6002d;
+}
+
+.eventos {
+    text-align: center;
+    padding: 50px 20px;
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.eventos .titulo {
+    font-size: 70px;
+    color: #800020;
+    /* Vinho */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.eventos .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.eventos .imagem {
+    position: relative;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.eventos .imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.eventos .overlay {
+    font-family: "Herr Von Muellerhoff", cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #E6953C;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.eventos .imagem:hover .overlay {
+    opacity: 20;
+}
+
+.buffet-section {
+    padding: 40px 20px;
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+}
+
+.buffet-section .titulo {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 80px;
+    color: #E6953C;
+}
+
+.buffet-section .subtitulo {
+    font-size: 32px;
+    color: #800020;
+    /* Vinho */
+    margin-bottom: 30px;
+}
+
+.buffet-section .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buffet-section .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 100px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.buffet-section .card h2 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #E6953C;
+    font-size: 50px;
+}
+
+.buffet-section .card h3 {
+    font-size: 25px;
+    color: #800020;
+    /* Vinho */
+}
+
+.buffet-section .card p {
+    font-size: 20px;
+}
+
+.buffet-section .card img {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.buffet-section .card h4 {
+    font-size: 18px;
+}
+
+.contato {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    background: url('/src/imagenshome/contato.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.contato .overlaycontato {
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contato .titulo {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 70px;
+    color: #E6953C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contato .highlightcontato {
+    font-size: 60px;
+    font-weight: bold;
+    color: #800020;
+    /* Vinho */
+}
+
+.contatobot {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 40px;
+    color: #E6953C;
+    text-decoration: none;
+}
+
+.contatobot:hover {
+    color: #ffb96d;
+}
+
+.secao-trabalho {
+    visibility: hidden;
+    /* Para aplicar o ScrollReveal */
+    margin-top: 10px;
+    background-image: url('/src/imagenshome/trabalho.jpg');
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.secao-trabalho .overlayconteudo {
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.secao-trabalho .titulo {
+    font-size: 60px;
+    color: #800020;
+    /* Vinho */
+}
+
+.secao-trabalho .subtitulo {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 40px;
+    color: #E6953C;
+    /* Cor dourada */
+    text-decoration: none;
+}
+
+.secao-trabalho .subtitulo:hover {
+    color: #ffb96d;
+}
+
+.rodape {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.rodape .logo p {
+    font-size: 20px;
+}
+
+.rodape .coluna {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.rodape .logo img {
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+.rodape h3 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: #E6953C;
+    /* Cor dourada */
+    font-size: 40px;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    margin: 15px 0;
+}
+
+.rodape ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.rodape ul li a:hover {
+    color: #ffb96d;
+}
+
+.rodape .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
