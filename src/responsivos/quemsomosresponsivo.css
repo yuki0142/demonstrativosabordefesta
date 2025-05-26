@@ -1,0 +1,258 @@
+@media (max-width: 986px) {
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logonav {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    .banner {
+        height: 30vh;
+        position: relative;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .banner-titulo {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .introducao {
+        padding: 20px;
+    }
+
+    .introducao h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .introducao p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .assinatura {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .galeriaequipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .galeriaequipe .imagem {
+        flex: 0 0 calc(50% - 20px);
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .galeriaequipe .imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .historia {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .historia .bloco {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .historia .texto {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .imagemhistoria {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .imagemhistoria img {
+        width: 100%;
+        max-width: 400px;
+        max-height: 250px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .sucesso .overlaysucesso {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sucesso .titulo {
+        font-size: 24px;
+    }
+
+    .sucesso .highlightsucesso {
+        font-size: 30px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .rodape .coluna {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .rodape ul {
+        padding: 0;
+    }
+
+    .rodape ul li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    .rodape ul li a {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .banner {
+        height: 25vh;
+    }
+
+    .banner img {
+        height: 25vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .banner-titulo {
+        font-size: 22px;
+    }
+
+    .introducao h1 {
+        font-size: 22px;
+    }
+
+    .introducao p {
+        font-size: 14px;
+    }
+
+    .assinatura h2 {
+        font-size: 20px;
+    }
+
+    .assinatura p {
+        font-size: 16px;
+    }
+
+    .galeriaequipe .imagem {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .imagemhistoria img {
+        width: 100%;
+        max-width: 350px;
+        max-height: 200px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .historia {
+        padding: 0 10px;
+    }
+
+    .bloco {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .historia .texto h2 {
+        font-size: 20px;
+    }
+
+    .historia .data,
+    .historia .texto p {
+        font-size: 14px;
+    }
+
+    .sucesso .titulo {
+        font-size: 20px;
+    }
+
+    .sucesso .highlightsucesso {
+        font-size: 24px;
+    }
+
+    .rodape h3 {
+        font-size: 20px;
+    }
+
+    .rodape ul li a {
+        font-size: 14px;
+    }
+}

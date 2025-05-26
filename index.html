@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor de Festa</title>
+
+    <link rel="stylesheet" href="src/estilos/index.css">
+    <link rel="stylesheet" href="src/responsivos/indexresponsivo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script><!-- ScrollReveal -->
+
+    <script src="https://kit.fontawesome.com/2a79d52758.js" crossorigin="anonymous"></script> <!-- font awesome -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="src/imagenshome/Logo.png" alt="Logo" class="logonav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <video src="src/videohome/capa.mp4" autoplay muted loop alt="Video inicial">
+    </section>
+
+    <section class="sobre">
+        <div class="sobre-texto">
+            <h2><span>Um pouco</span><br>Sobre o Nosso Buffet</h2>
+            <p>
+                Somos responsáveis por realizar eventos incríveis, pois sabemos da importância de se ter um cardápio bem elaborado na sua festa. 
+                Por esse motivo, nosso menu reúne elementos da alta gastronomia que agregam muito sabor e sofisticação ao seu prato.
+            </p>
+            <a href="QuemSomos.html" class="botaosobre">Nossa História</a>
+        </div>
+        <div class="sobre-imagem">
+            <img src="src/imagenshome/sobre.jpg" alt="Imagem representando um buffet de festa">
+        </div>
+    </section>
+
+    <section class="servicos">
+        <div class="servicos-imagem">
+            <img src="src/imagenshome/serviços.jpg" alt="Imagem de um evento sendo realizado">
+        </div>
+        <div class="servicos-texto">
+            <h2><span>Nossos</span><br>Serviços</h2>
+            <p>
+                Realizamos todos os tipos de confraternizações e eventos sociais, como casamentos, bodas, debutantes, aniversários, eventos corporativos, 
+                feiras, eventos de moda, congressos, formaturas, premiações e muito mais.
+            </p>
+        </div>
+    </section>
+
+    <section class="eventos">
+        <h2 class="titulo">Eventos Realizados</h2>
+        <div class="galeria">
+            <div class="imagem">
+                <img src="src/imagenshome/evento1.jpg" alt="Evento 1">
+                <a href="GaleriadeEventos.html"><div class="overlay">Veja Mais</div></a>
+            </div>
+            <div class="imagem">
+                <img src="src/imagenshome/evento2.jpg" alt="Evento 2">
+                <a href="GaleriadeEventos.html"><div class="overlay">Veja Mais</div></a>
+            </div>
+            <div class="imagem">
+                <img src="src/imagenshome/evento3.jpg" alt="Evento 3">
+                <a href="GaleriadeEventos.html"><div class="overlay">Veja Mais</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buffet-section">
+        <h2 class="titulo">Porque Escolher</h2>
+        <h3 class="subtitulo">O Buffet Sabor de Festa</h3>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2><span class="highlight">Cozinha de</span></h2>
+                <h3><span>Alto Padrão</span></h3>
+                <img src="src/imagenshome/icons-panela.png" alt="Panela">
+                <p>Equipe especializada na elaboração de pratos requintados, extraindo o máximo de sabor dos alimentos.</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Receitas</span></h2>
+                <h3><span>Inovadoras</span></h3>
+                <img src="src/imagenshome/icons-livro-de-receitas.png" alt="Receitas">
+                <p>Cardápio diverso, com receitas inspiradas em pratos típicos brasileiros e estrangeiros.</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Equipe</span></h2>
+                <h3><span>Qualificada</span></h3>
+                <img src="src/imagenshome/icons-cozinheiro.png" alt="Chapéu de Chef">
+                <p>Profissionais altamente qualificados para desenvolver um trabalho dinâmico com qualidade e excelência.</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Design de</span></h2>
+                <h3><span>Alimentos</span></h3>
+                <img src="src/imagenshome/icons-donut.png" alt="Dunot">
+                <p>A arte de comer bem está relacionada não apenas ao sabor do prato, mas também ao toque de elegância adicionado à receita.</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Anos de</span></h2>
+                <h3><span>Experiência</span></h3>
+                <img src="src/imagenshome/icons-bar.png" alt="Drink">
+                <p>Desde 2014 o Buffet Sabor de Festa vem surpreendendo no atendimento e na execução dos eventos realizados.</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Rapidez e</span></h2>
+                <h3><span>Agilidade</span></h3>
+                <img src="src/imagenshome/icons-garçom.png" alt="Garçom">
+                <p>O Buffet Sabor de Festa sabe administrar seu tempo, fazendo com que os convidados recebam refeições incríveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="overlaycontato">
+            <h2 class="titulo">Monte o Cardápio da Sua Festa Conosco</h2>
+            <h1 class="highlightcontato">Solicite um orçamento</h1>
+            <a href="Contato.html" class="contatobot">Entre em contato</a>
+        </div>
+    </section>
+
+    <section class="secao-trabalho">
+        <div class="overlayconteudo">
+            <h1 class="titulo">Gostou do Nosso Trabalho?</h1>
+            <a href="QuemSomos.html" class="subtitulo">Conheça Nossa Trajetória</a>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="coluna logo">
+            <img src="src/imagenshome/Logo.png" alt="Logo Sabor de Festa">
+            <p>Realize seu evento conosco e transforme momentos especiais em memórias inesquecíveis.</p>
+        </div>
+    
+        <div class="coluna links">
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+            </ul>
+        </div>
+    
+        <div class="coluna contatofooter">
+            <h3>Alguma dúvida?</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> Gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 99999-9999</a></li>
+                <li><a href="https://www.instagram.com/sabordefestaaraxa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i> @sabordefestaaraxa</a></li>
+            </ul>
+        </div>
+    
+        <div class="copyright">
+            <p>© <span id="ano"></span> Sabor de Festa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script >
+        document.getElementById("ano").textContent = new Date().getFullYear(); //atualiza o ano sozinho do footer.
+    </script>
+
+    <script src="src/js/ScrollReveal/HomeScrollReveal.js"></script>
+</body>
+</html>

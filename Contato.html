@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Sabor de Festa</title>
+
+    <link rel="stylesheet" href="src/estilos/index.css">
+    <link rel="stylesheet" href="src/responsivos/indexresponsivo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/2a79d52758.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="src/imagenshome/Logo.png" alt="Logo" class="logonav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contato-principal">
+        <div class="overlaycontato">
+            <h2 class="titulo">Monte o Cardápio da Sua Festa Conosco</h2>
+            <h1 class="highlightcontato">Solicite um orçamento</h1>
+            <a href="#" class="contatobot">Entre em contato</a>
+        </div>
+    </section>
+
+    <section class="contato-redes" style="text-align: center; padding: 40px 0; background-color: #fff8f0;">
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 20px;">Fale Conosco</h2>
+        <p style="margin-bottom: 30px; font-size: 1.2rem;">Clique em um dos botões abaixo para entrar em contato conosco:</p>
+        
+        <a href="https://wa.me/5599999999999" target="_blank" style="margin: 10px; text-decoration: none; padding: 15px 25px; background-color: #25D366; color: white; border-radius: 10px; font-size: 1rem; display: inline-block;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Fale pelo WhatsApp
+        </a>
+
+        <a href="https://www.instagram.com/sabordefestaaraxa" target="_blank" style="margin: 10px; text-decoration: none; padding: 15px 25px; background-color: #E1306C; color: white; border-radius: 10px; font-size: 1rem; display: inline-block;">
+            <i class="fa-brands fa-instagram" style="margin-right: 8px;"></i> Visite o Instagram
+        </a>
+    </section>
+
+    <footer class="rodape">
+        <div class="coluna logo">
+            <img src="src/imagenshome/Logo.png" alt="Logo Sabor de Festa">
+            <p>Realize seu evento conosco e transforme momentos especiais em memórias inesquecíveis.</p>
+        </div>
+
+        <div class="coluna links">
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna contatofooter">
+            <h3>Alguma dúvida?</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> Gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 99999-9999</a></li>
+                <li><a href="https://www.instagram.com/sabordefestaaraxa" target="_blank"><i class="fa-brands fa-instagram"></i> @sabordefestaaraxa</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>© <span id="ano"></span> Sabor de Festa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="src/js/ScrollReveal/HomeScrollReveal.js"></script>
+</body>
+</html>

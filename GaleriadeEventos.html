@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor de Festa</title>
+
+    <link rel="stylesheet" href="src/estilos/GaleriadeEventos.css">
+    <link rel="stylesheet" href="src/responsivos/galeriadeeventosresponsivo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script><!-- ScrollReveal -->
+
+    <script src="https://kit.fontawesome.com/2a79d52758.js" crossorigin="anonymous"></script> <!-- font awesome -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Import fonte -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Herr+Von+Muellerhoff&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="src/imagensgaleriadeeventos/Logo.png" alt="Logo" class="logonav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Banner com vídeo ou imagem -->
+    <section class="banner">
+        <img src="src/imagensgaleriadeeventos/banner.jpg" alt="Imagem de destaque com queijos e frutas">
+        <h1 class="banner-titulo">Galeria de eventos</h1>
+    </section>
+
+    <section class="conteudoprincipal">
+
+        <section class="intro">
+            <h2>Nossas Especialidades</h2>
+            <h1>Eventos Privados</h1>
+            <p>
+                O Buffet Sabor de Festa é especializado na realização de eventos sociais, corporativos e estudantis.
+                <br>
+                Contamos com uma equipe qualificada, dinâmica e treinada para deixar o seu evento ainda mais
+                sofisticado.
+            </p>
+        </section>
+
+        <section class="eventos">
+            <div class="evento">
+                <img src="src/imagensgaleriadeeventos/eventos.jpg" alt="Eventos Sociais">
+                <h3>Eventos Sociais</h3>
+                <p>
+                    Atendemos todos os tipos de eventos sociais: datas comemorativas, eventos religiosos,
+                    confraternizações
+                    em família, entre outros.
+                </p>
+            </div>
+            <div class="evento">
+                <img src="src/imagensgaleriadeeventos/eventos.jpg" alt="Eventos Corporativos">
+                <h3>Eventos Corporativos</h3>
+                <p>
+                    Realizamos eventos privados para empresas de pequeno, médio e grande porte.
+                </p>
+            </div>
+            <div class="evento">
+                <img src="src/imagensgaleriadeeventos/eventos.jpg" alt="Eventos Estudantis">
+                <h3>Eventos Estudantis</h3>
+                <p>
+                    Somos especializados no atendimento de eventos estudantis, confraternizações de grupo, pré eventos
+                    de
+                    formaturas e jantares dançantes.
+                </p>
+            </div>
+        </section>
+
+        <section class="faixa">
+            <div class="overlayfaixa">
+                <h2 class="titulo">Galeria de Eventos do Buffet</h2>
+                <h1 class="highlightfaixa">Confira Abaixo</h1>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <div class="bloco">
+                <div class="texto">
+                    <h2>Casamentos e Bodas</h2>
+                    <p>Estamos aqui para te ajudar a celebrar o amor e a união, não importa o dia a hora e o lugar. A
+                        vida é
+                        um presente de Deus e o casamento é o começo de uma nova vida que se inicia a dois, para ser
+                        percorrida por um longo tempo!
+                    </p>
+                    <button onclick="mostrarGaleria('fotosCasamento')">Ver Fotos</button>
+                </div>
+                <div class="imagemgaleria">
+                    <img src="src/imagensgaleriadeeventos/galeria.jpg" alt="Começo de tudo">
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="texto">
+                    <h2>Aniverssários e Debutantes</h2>
+                    <p>Comemore com sua família e amigos cada aniversário, cada oportunidade de acordar e poder fazer
+                        tudo
+                        novo de novo. Experimente a sensação de crescer e amadurecer, sempre brindando a vida!
+                    </p>
+                    <button onclick="mostrarGaleria('fotosAniversario')">Ver Fotos</button>
+                </div>
+                <div class="imagemgaleria">
+                    <img src="src/imagensgaleriadeeventos/galeria.jpg" alt="Ampliação do negócio">
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="texto">
+                    <h2>Demais Eventos</h2>
+                    <p>Cada momento especial merece ser celebrado com carinho e dedicação. Seja um evento corporativo,um
+                        jantar especial, uma confraternização entre amigos ou qualquer outra ocasião, nosso espaço está
+                        preparado para receber você e seus convidados com elegância e conforto. Oferecemos um ambiente
+                        sofisticado, decoração personalizada e serviços de alta qualidade para tornar seu evento
+                        inesquecível.
+                    </p>
+                    <button onclick="mostrarGaleria('fotosDemais')">Ver Fotos</button>
+                </div>
+                <div class="imagemgaleria">
+                    <img src="src/imagensgaleriadeeventos/galeria.jpg" alt="Momento Atual">
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="galeriaFotos" class="galeria-fotos hidden">
+        <div id="fotosCasamento" class="fotos hidden">
+            <h2>Casamentos e Bodas</h2>
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 1">
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 2">
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 3">
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 4">
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 5">
+            <img src="src/imagensgaleriadeeventos/fotoscasamentos/casamentoteste.jpg" alt="Casamento 6">
+        </div>
+        <div id="fotosAniversario" class="fotos hidden">
+            <h2>Aniversários e Debutantes</h2>
+            <img src="src/imagensgaleriadeeventos/fotosaniverssarios/foto.jpg" alt="Aniversário 1">
+            <img src="src/imagensgaleriadeeventos/fotosaniverssarios/foto.jpg" alt="Aniversário 2">
+        </div>
+        <div id="fotosDemais" class="fotos hidden">
+            <h2>Demais Eventos</h2>
+            <img src="src/imagensgaleriadeeventos/demaisfotos/foto.jpg" alt="Evento 1">
+            <img src="src/imagensgaleriadeeventos/demaisfotos/foto.jpg" alt="Evento 2">
+        </div>
+        <button class="voltar" onclick="voltarParaPrincipal()">Voltar</button>
+    </section>
+
+    <footer class="rodape">
+        <div class="coluna logo">
+            <img src="src/imagensgaleriadeeventos/Logo.png" alt="Logo Sabor de Festa">
+            <p>Realize seu evento conosco e transforme momentos especiais em memórias inesquecíveis.</p>
+        </div>
+    
+        <div class="coluna links">
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+            </ul>
+        </div>
+    
+        <div class="coluna contatofooter">
+            <h3>Alguma dúvida?</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> Gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 99999-9999</a></li>
+                <li><a href="https://www.instagram.com/sabordefestaaraxa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i> @sabordefestaaraxa</a></li>
+            </ul>
+        </div>
+    
+        <div class="copyright">
+            <p>© <span id="ano"></span> Sabor de Festa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script >
+        document.getElementById("ano").textContent = new Date().getFullYear(); //atualiza o ano sozinho do footer.
+    </script>
+
+    <script src="src/js/ScrollReveal/GaleriadeEventosScrollReveal.js"></script>
+    <script src="src/js/GaleriadeEventos.js"></script>
+
+</body>
+
+</html>

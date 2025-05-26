@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor de Festa</title>
+
+    <link rel="stylesheet" href="src/estilos/QuemSomos.css">
+    <link rel="stylesheet" href="src/responsivos/quemsomosresponsivo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script><!-- ScrollReveal -->
+
+    <script src="https://kit.fontawesome.com/2a79d52758.js" crossorigin="anonymous"></script> <!-- font awesome -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Import fonte -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Herr+Von+Muellerhoff&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="src/imagensquemsomos/Logo.png" alt="Logo" class="logonav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Banner com vídeo ou imagem -->
+    <section class="banner">
+        <img src="src/imagensquemsomos/banner.jpg" alt="Imagem de destaque com queijos e frutas">
+        <h1 class="banner-titulo">Quem Somos</h1>
+    </section>
+
+    <section class="introducao">
+        <h1>Introdução</h1>
+        <p>
+            Nós somos uma empresa focada em aluguel de salões para festa e em disponibilizar organização e buffet para as mesmas,
+            nossos seviços podem ser encontrados para demonstração em Cárdapio e Galeria de Eventos.
+        </p>
+    </section>
+
+    <section class="assinatura">
+        <h2>Danielle Cristina</h2>
+        <p>Diretora Executiva</p>
+    </section>
+
+    <section class="galeriaequipe">
+        <div class="imagem">
+            <img src="src/imagensquemsomos/equipe1.jpg" alt="Imagem da equipe 1">
+        </div>
+        <div class="imagem">
+            <img src="src/imagensquemsomos/equipe1.jpg" alt="Imagem da equipe 2">
+        </div>
+    </section>
+
+    <section class="historia">
+        <div class="bloco">
+            <div class="texto">
+                <h2>O Começo de tudo</h2>
+                <p class="data">Data XXXX</p>
+                <p>Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto
+                    de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...</p>
+            </div>
+            <div class="imagemhistoria">
+                <img src="src/imagensquemsomos/historiateste.jpg" alt="Começo de tudo">
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="texto">
+                <h2>Ampliação do negócio</h2>
+                <p class="data">Data XXXX</p>
+                <p>Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto
+                    de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...</p>
+            </div>
+            <div class="imagemhistoria">
+                <img src="src/imagensquemsomos/historiateste.jpg" alt="Ampliação do negócio">
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="texto">
+                <h2>Momento Atual</h2>
+                <p class="data">Data XXXX</p>
+                <p>Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...Texto
+                    de exemplo...Texto de exemplo...Texto de exemplo...Texto de exemplo...</p>
+            </div>
+            <div class="imagemhistoria">
+                <img src="src/imagensquemsomos/historiateste.jpg" alt="Momento Atual">
+            </div>
+        </div>
+    </section>
+
+    <section class="sucesso">
+        <div class="overlaysucesso">
+            <h2 class="titulo">Buffet Sabor de Festa</h2>
+            <h1 class="highlightsucesso">Uma história de Sucesso</h1>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="coluna logo">
+            <img src="src/imagensquemsomos/Logo.png" alt="Logo Sabor de Festa">
+            <p>Realize seu evento conosco e transforme momentos especiais em memórias inesquecíveis.</p>
+        </div>
+    
+        <div class="coluna links">
+            <h3>Links úteis</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="QuemSomos.html">Quem Somos</a></li>
+                <li><a href="GaleriadeEventos.html">Galeria de Eventos</a></li>
+                <li><a href="Cardápio.html">Cardápio</a></li>
+            </ul>
+        </div>
+    
+        <div class="coluna contatofooter">
+            <h3>Alguma dúvida?</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> teste@Gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 34 99999-9999</a></li>
+                <li><a href="https://www.instagram.com/sabordefestaaraxa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i> @sabordefestaaraxa</a></li>
+            </ul>
+        </div>
+    
+        <div class="copyright">
+            <p>© <span id="ano"></span> Sabor de Festa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script >
+        document.getElementById("ano").textContent = new Date().getFullYear(); //atualiza o ano sozinho do footer.
+    </script>
+
+    <script src="src/js/ScrollReveal/QuemSomosScrollReveal.js"></script>
+    <script src="src/js/QuemSomos.js"></script>
+
+</body>
+
+</html>
